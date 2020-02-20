@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Form, Button, DatePicker, Input, Modal, Radio, Select, Steps } from 'antd';
 
 import { TableListItem } from '../data.d';
-
 export interface FormValueType extends Partial<TableListItem> {
   target?: string;
   template?: string;
@@ -121,14 +120,29 @@ const UpdateForm: React.FC<UpdateFormProps> = props => {
         </>
       );
     }
+    const  CurrencyList=[{
+      id:1,
+      name:"aaa"
+    }]
     return (
       <>
         <FormItem
           name="name"
-          label="规则名称"
-          rules={[{ required: true, message: '请输入规则名称！' }]}
+          label="货币"
+          rules={[{ message: '全部' }]}
         >
-          <Input placeholder="请输入" />
+          <Select
+                  showSearch
+                  style={{width: "100%"}}
+                  placeholder="全部"
+                  optionFilterProp="children"
+                >
+                  {CurrencyList && CurrencyList.map((v, index) => (
+                    <Option key={index} value={v.id}>
+                      {v.name}
+                    </Option>
+                ))}
+                </Select>
         </FormItem>
         <FormItem
           name="desc"

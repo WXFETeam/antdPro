@@ -107,6 +107,12 @@ export default {
               component: './Welcome',
             },
             {
+              path: '/empty',
+              name: 'pro',
+              icon: 'smile',
+              component: './EmptyPage',
+            },
+            {
               path: '/admin',
               name: 'admin',
               icon: 'crown',
@@ -129,16 +135,10 @@ export default {
               component: './ListTableList',
             },
             {
-              name: '1',
+              name: '基础表单',
               icon: 'smile',
-              path: '/emptypagetwo',
-              component: './EmptyPageTwo',
-            },
-            {
-              name: 'Pro财务对帐',
-              icon: 'smile',
-              path: '/emptypage',
-              component: './EmptyPage',
+              path: '/formbasicform',
+              component: './FormBasicForm',
             },
             {
               component: './404',

@@ -1,5 +1,6 @@
 export default {
   'menu.welcome': '欢迎',
+  'menu.pro': 'Pro财务对账',
   'menu.more-blocks': '更多区块',
   'menu.home': '首页',
   'menu.admin': '管理页',
@@ -14,7 +15,7 @@ export default {
   'menu.exception.403': '403',
   'menu.exception.404': '404',
   'menu.exception.500': '500',
-  'menu.form': '表单页',
+  'menu.form': 'Pro对账',
   'menu.form.basic-form': '基础表单',
   'menu.form.step-form': '分步表单',
   'menu.form.step-form.info': '分步表单（填写转账信息）',

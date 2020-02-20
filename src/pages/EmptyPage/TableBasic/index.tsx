@@ -4,51 +4,65 @@ import { Table, Divider, Tag } from "antd";
 
 const columns = [
   {
-    title: "Name",
+    title: "时间",
     dataIndex: "name",
     key: "name",
     render: text => <a>{text}</a>
   },
   {
-    title: "Age",
+    title: "币种",
     dataIndex: "age",
     key: "age"
   },
   {
-    title: "Address",
+    title: "手续费收入",
     dataIndex: "address",
     key: "address"
   },
   {
-    title: "Tags",
+    title: "交易返佣",
     key: "tags",
     dataIndex: "tags",
     render: tags => (
       <span>
-        {tags.map(tag => {
-          let color = tag.length > 5 ? "geekblue" : "green";
-          if (tag === "loser") {
-            color = "volcano";
-          }
-          return (
-            <Tag color={color} key={tag}>
-              {tag.toUpperCase()}
-            </Tag>
-          );
-        })}
+       111
       </span>
     )
   },
   {
-    title: "Action",
-    key: "action",
-    render: (text, record) => (
-      <span>
-        <a>Invite {record.name}</a>
-        <Divider type="vertical" />
-        <a>Delete</a>
-      </span>
-    )
+    title: "异常转热",
+    dataIndex: "address1",
+    key: "address1"
+  },
+  {
+    title: "异常转热返还",
+    dataIndex: "address2",
+    key: "address2"
+  },
+  {
+    title: "矿工费",
+    dataIndex: "address3",
+    key: "address3"
+  },
+  {
+    title: "用户充值",
+    dataIndex: "address4",
+    key: "address4"
+  },
+  {
+    title: "用户提现",
+    dataIndex: "address5",
+    key: "address5"
+  },
+  {
+    title: "公司投入",
+    dataIndex: "address6",
+    key: "address6"
+  },
+  {
+    title: "活动投入",
+    dataIndex: "address7",
+    key: "address7 "
   }
 ];
 
